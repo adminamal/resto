@@ -13,7 +13,7 @@ $factory->define(OrderLine::class, function (Faker $faker) {
         'order_id' => Order::get('id')->random(),
         'quantity_ordered' => $faker->randomDigitNotNull,
         'price_each' => $faker->randomFloat(3,2,300), 
-        'created_at' => now(),
-        'updated_at' => now()
+        'created_at' => now()
+      
     ];
 });

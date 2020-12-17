@@ -26,8 +26,7 @@ $factory->define(User::class, function (Faker $faker) {
         'adress'=>$faker->address,
         'number'=>$faker->e164PhoneNumber,
         'remember_token' => Str::random(10),
-        'created_at' => now(),
-        'updated_at' => now()
+        'created_at' => now()
         
     ];
 });

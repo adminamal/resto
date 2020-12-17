@@ -11,7 +11,7 @@ $factory->define(Order::class, function (Faker $faker) {
         'user_id' => User::get('id')->random(),
         'total_amount' => $faker->randomFloat(3,2,5000),
         'tax_rate' => $faker->randomFloat(3,2,1000),
-        'created_at' => now(),
-        'updated_at' => now()
+        'created_at' => now()
+    
     ];
 });
